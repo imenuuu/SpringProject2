@@ -1,4 +1,4 @@
-package com.example.springproject1.service.posts;
+package com.example.springproject1.service;
 
 import com.example.springproject1.domain.posts.Posts;
 import com.example.springproject1.domain.posts.PostsRepository;
