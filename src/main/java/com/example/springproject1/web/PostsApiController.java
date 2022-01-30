@@ -1,4 +1,4 @@
-package com.example.springproject1.service;
+package com.example.springproject1.web;
 
 import com.example.springproject1.service.PostsService;
 import com.example.springproject1.web.dto.PostsResponseDto;

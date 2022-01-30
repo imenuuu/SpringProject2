@@ -1,5 +1,6 @@
 package com.example.springproject1.domain.posts;
 
+import com.example.springproject1.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import javax.persistence.*;
 @Entity
 //JAP의 어노테이션, 테이블과 링크될 클래스임을 나타낸다.
 //Posts 클래스는 실제 DB의 테이블과 매칭될 클래스이다. 보통 Entity 클래스라고 한다.
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @Id
     //해당 테이블의 PK필드를 나타낸다.
     @GeneratedValue(strategy = GenerationType.IDENTITY)

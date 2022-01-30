@@ -6,7 +6,6 @@ import com.example.springproject1.web.dto.PostsResponseDto;
 import com.example.springproject1.web.dto.PostsSaveRequestDto;
 import com.example.springproject1.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
