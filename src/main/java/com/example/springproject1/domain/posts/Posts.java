@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Getter
 //롬복의 어노테이션, 클래스 내의 Getter 메소드를 자동 생성
@@ -39,9 +40,10 @@ public class Posts extends BaseTimeEntity {
         this.content=content;
         this.author=author;
     }
-
-    public void update(String title,String content){
+    public void update (String title,String content){
         this.title=title;
         this.content=content;
     }
+
+
 }
