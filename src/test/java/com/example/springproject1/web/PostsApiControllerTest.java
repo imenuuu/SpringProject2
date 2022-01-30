@@ -1,4 +1,4 @@
-package com.example.springproject1.dto;
+package com.example.springproject1.web;
 
 import com.example.springproject1.domain.posts.Posts;
 import com.example.springproject1.domain.posts.PostsRepository;
@@ -23,7 +23,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class PostApiControllerTest {
+public class PostsApiControllerTest {
     @LocalServerPort
     private int port;
 
@@ -60,7 +60,6 @@ public class PostApiControllerTest {
         assertThat(all.get(0).getTitle()).isEqualTo(title);
         assertThat(all.get(0).getContent()).isEqualTo(content);
     }
-
     @Test
     public void Posts_수정된다() throws Exception{
         Posts savedPosts=postsRepository.save(Posts.builder().
@@ -87,5 +86,4 @@ public class PostApiControllerTest {
         assertThat(all.get(0).getTitle()).isEqualTo(expectedTitle);
         assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
     }
-
 }
