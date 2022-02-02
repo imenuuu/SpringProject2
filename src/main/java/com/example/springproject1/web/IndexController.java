@@ -24,10 +24,11 @@ public class IndexController {
         return "posts-save";
     }
 
-    @GetMapping("/posts/upadte/{id}")
-    public String postsUpdate(@PathVariable Long id,Model model){
-        PostsResponseDto dto=postsService.findById(id);
-        model.addAttribute("post",dto);
+    @GetMapping("/posts/update/{id}")
+    public String postsUpdate(@PathVariable Long id, Model model) {
+        PostsResponseDto dto = postsService.findById(id);
+        model.addAttribute("post", dto);
+
         return "posts-update";
     }
 }
